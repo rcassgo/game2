@@ -91,8 +91,8 @@ function fieldset() {
     const yMax = fieldRect.height;
     
     for (let i = 0; i < 10; i++){
-        const x = randomNumber(bugRect.width, xMax - bugRect.width);
-        const y = randomNumber(bugRect.height, yMax - bugRect.height);
+        const x = randomNumber(bugRect.width, xMax);
+        const y = randomNumber(bugRect.height, yMax);
         const newBugImg = document.createElement('img');
         newBugImg.src = 'img/bug.png';
         newBugImg.classList.add('target');
@@ -122,8 +122,8 @@ function fieldset() {
     }
     
     for (let i = 0; i < 10; i++){
-        const x = randomNumber(targetRect.width, xMax - targetRect.width);
-        const y = randomNumber(targetRect.height, yMax - targetRect.height);
+        const x = randomNumber(targetRect.width, xMax);
+        const y = randomNumber(targetRect.height, yMax);
         const newTargetImg = document.createElement('img');
         newTargetImg.src = 'img/carrot.png';
         newTargetImg.classList.add('bug');
