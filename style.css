@@ -1,0 +1,143 @@
+:root {
+    --color-black: var(--color-black);
+    --color-background: var(--color-gray);
+    --color-button: var(--color-apricot);
+    --color-white: var(--color-white);
+    --color-impact: var(--color-orange);
+
+    --color-black: #050a13;
+    --color-gray: #1b1e26;
+    --color-apricot:#edd7cf;
+    --color-white: #ffffff;
+    --color-orange: #f2c6bb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+body {
+    box-sizing:border-box;
+    display: flex;
+    min-height: 100vh; /* 최소 높이를 브라우저 전체 높이로 설정 */
+    justify-content: center;
+    align-items: center;
+}
+
+.bg {
+    position: relative;
+    background-image: url("img/background.png");
+    background-size: 100% 100%;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.startBtn,
+.pauseBtn {
+    display: none;
+    background-color: var(--color-button);
+    font-size: 30px;
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: 3px solid;
+}
+
+.startBtn.active,
+.pauseBtn.active {
+    display: block;
+}
+
+.timmer {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 10px;
+    width: 130px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    border: 4px solid;
+}
+
+.counter {
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-impact);
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+
+
+.field {
+    position:absolute;
+    width: 100%;
+    height: 50%;
+    top:50%;
+}
+
+.field img {
+    position: absolute;
+}
+
+.target,
+.bug {
+    cursor: pointer;
+}
+
+
+
+.result {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+    width: 300px;
+    height: 120px;
+    margin: 100px auto;
+    background-color: rgba(0, 0, 0, 0.5); /* 배경색을 검정색으로 설정하고 투명도를 0.5로 설정 */
+    border-radius: 8px;
+    z-index: 3;
+}
+
+.result.active {
+    display: flex;
+}
+
+.restartBtn {
+    font-size: 30px;
+    padding: 10px;
+    background-color: var(--color-button);
+    border-radius: 8px;
+}
+
+.resultText {
+    font-size: 30px;
+    color: var(--color-white);
+    margin-top : 5px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/fe8816751e.js" crossorigin="anonymous"></script>
+    <audio id="gameMusic" src="sound/bg.mp3"></audio>
+    <audio id="bug_pull" src="sound/bug_pull.mp3"></audio>
+    <audio id="carrot_pull" src="sound/carrot_pull.mp3"></audio>
+    <audio id="game_win" src="sound/game_win.mp3"></audio>
+    <audio id="alert" src="sound/alert.wav"></audio>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="bg">
+        <section class="info">
+            <button class="startBtn active"><i class="fa-solid fa-play"></i></button>
+            <button class="pauseBtn"><i class="fa-solid fa-pause"></i></button>
+            <div class="timmer"></div>
+            <div class="counter">10</div>
+        </section>
+        <section class="field">
+            <img class="target" src="img/carrot.png" alt="target" style="visibility: hidden;">
+            <img class="bug" src="img/bug.png" alt="bug" style="visibility: hidden;">
+        </section>
+        <section class="result">
+            <button class="restartBtn"><i class="fa-solid fa-rotate-right"></i></button>
+            <div class="resultText"></div>
+        </section>
+    </section>
+</body>
+
+</html>
